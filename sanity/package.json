@@ -25,7 +25,7 @@
   ],
   "license": "UNLICENSED",
   "main": "package.json",
-  "name": "compressedfm",
+  "name": "altustalks",
   "private": true,
   "scripts": {
     "build": "sanity build",

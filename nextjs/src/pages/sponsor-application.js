@@ -6,9 +6,10 @@ import { LegalQuery, pricingQuery } from 'queries/Queries';
 import MyHead from 'modules/shared/components/Header/MyHead';
 
 export default function SponsorApplication({ footerLinks, futureEpisodes, pricing }) {
+  // TODO: make sure this doesn't show
   return (
     <InteriorLayout footerLinks={footerLinks}>
-      <MyHead title="Compressed.fm - Interested in Sponsoring?" />
+      <MyHead title="Altus Talks - Interested in Sponsoring?" />
 
       <SponsorApplicationPage futureEpisodes={futureEpisodes} pricing={pricing} />
     </InteriorLayout>

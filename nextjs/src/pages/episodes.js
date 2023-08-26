@@ -7,7 +7,7 @@ import MyHead from 'modules/shared/components/Header/MyHead';
 export default function Episodes({ episodes, footerLinks }) {
   return (
     <>
-      <MyHead title="Compressed.fm - Episodes" />
+      <MyHead title="Altus Talks - Episodes" />
       <InteriorLayout footerLinks={footerLinks}>
         <EpisodePage episodes={episodes} />
       </InteriorLayout>

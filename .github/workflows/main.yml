@@ -6,7 +6,7 @@ name: Update Podcast Analytics
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 0 1-31 * *'
+    - cron: "0 0 1-31 * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,4 +19,5 @@ jobs:
     steps:
       - name: cURL request
         # Hit the webhook endpoint to rebuild  from the "main" branch
+        # TODO: update this link with our deployed domain
         run: curl -X POST -d {} https://www.compressed.fm/api/stats/update

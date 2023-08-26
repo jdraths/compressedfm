@@ -19,7 +19,7 @@ const Meta = ({ meta }) => {
     <>
       {seoTitle && <title>{seoTitle}</title>}
       {seoDescription && <meta name="description" content={seoDescription} />}
-      <meta property="og:site_name" content="Compressed.fm" />
+      <meta property="og:site_name" content="Altus Talks" />
       {url && <meta property="og:url" content={url} />}
       {ogTitle && <meta property="og:title" content={ogTitle} />}
       <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@ const Meta = ({ meta }) => {
       )}
       {ogDescription && <meta property="og:description" content={ogDescription} />}
       {ogImage && <meta property="og:image" content={ogImage} />}
-      <meta name="twitter:site" content="Compressed.fm" />
+      <meta name="twitter:site" content="Altus Talks" />
       <meta name="twitter:creator" content="@compressedfm" />
       {twitterCardType && <meta name="twitter:card" content={twitterCardType} />}
       {twitterTitle && <meta name="twitter:title" content={twitterTitle} />}

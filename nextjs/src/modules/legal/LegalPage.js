@@ -17,7 +17,7 @@ const LegalPage = ({ content }) => {
   return (
     <StyledLegalPage>
       <Head>
-        <title>{title} || Compressed.fm</title>
+        <title>{title} || Altus Talks</title>
         {meta && <Meta meta={meta} />}
       </Head>
 

@@ -2,14 +2,11 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
-// utilities
-import { Constants } from 'utils/constants';
-
 // components
 import { Breakpoints } from 'styles/Breakpoints';
+import Link from 'next/link';
 import { Navigation } from './components/Navigation';
 import { Hamburger } from './components/Hamburger';
-import Link from 'next/link';
 
 // styles
 
@@ -30,18 +27,14 @@ const HeaderHome = () => {
 
       <div>
         <h1>
-          <Image src="/images/logo.svg" width={850} height={272} />
+          {/* TODO: update logo */}
+          <Image alt="Altus Talks Logo" src="/images/logo.svg" width={850} height={272} />
         </h1>
         <h2>
-          A weekly podcast about web design and development from{' '}
-          <Link href={Constants.JAMES_WEBSITE_URL} target="_blank" rel="noreferrer">
-            James Q Quick
-          </Link>{' '}
-          and{' '}
-          <Link href={Constants.AMY_WEBSITE_URL} target="_blank" rel="noreferrer">
-            Amy Dutton
+          A monthly podcast by the interesting students at&nbsp;
+          <Link href="https://altusacademy.org" target="_blank" rel="noreferrer">
+            Altus Academy
           </Link>
-          .
         </h2>
       </div>
     </StyledHeader>

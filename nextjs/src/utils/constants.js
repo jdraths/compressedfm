@@ -1,4 +1,6 @@
 const Constants = Object.freeze({
+  // TODO: update all these
+
   // podcast catchers
   CASTBOX_URL: 'https://castbox.fm/channel/COMPRESSEDfm-id4038683?country=us',
   GOOGLE_URL: 'https://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9ocTdNMlM3cw%3D%3D',

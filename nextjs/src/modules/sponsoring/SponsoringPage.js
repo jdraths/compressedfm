@@ -22,6 +22,7 @@ const SponsoringPage = ({ settings }) => {
     JamesSocialMedia,
     AmySocialMedia,
   } = settings;
+  // TODO: make sure this page doesn't show anywhere
   return (
     <StyledSponsoringPage>
       <section className="intro">

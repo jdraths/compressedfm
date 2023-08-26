@@ -1,14 +1,15 @@
 import client from 'utils/client';
 import { AllEpisodesQuery } from 'queries/Queries';
 
+// TODO: update this website
 const website = 'https://compressed.fm';
 
 const xml = (episodes) =>
   `<rss xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:content="https://purl.org/rss/1.0/modules/content/" xmlns:atom="https://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Compressed.fm</title>
+    <title>Altus Talks</title>
     <link>${website}</link>
-    <description>Compressed.fm Podcast</description>
+    <description>Altus Talks Podcast</description>
     ${episodes
       .map(
         (episode) =>

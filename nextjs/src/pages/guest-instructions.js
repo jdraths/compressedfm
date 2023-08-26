@@ -5,7 +5,7 @@ import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
 export default function GuestInstructions() {
   return (
     <>
-      <MyHead title="Compressed.fm - Guest Instructions" />
+      <MyHead title="Altus Talks - Guest Instructions" />
       <InteriorLayout>Guest Instructions</InteriorLayout>
     </>
   );

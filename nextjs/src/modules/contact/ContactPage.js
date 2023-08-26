@@ -22,6 +22,7 @@ const ContactPage = () => {
     kwesforms.init();
   }, []);
 
+  // TODO: update this form
   return (
     <StyledContactPage>
       <div className="page-title__wrapper">

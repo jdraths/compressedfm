@@ -7,7 +7,7 @@ import MyHead from 'modules/shared/components/Header/MyHead';
 export default function Contact({ footerLinks }) {
   return (
     <>
-      <MyHead title="Compressed.fm - Grab Bag Questions" />
+      <MyHead title="Altus Talks - Grab Bag Questions" />
       <InteriorLayout footerLinks={footerLinks}>
         <GrabBagPage />
       </InteriorLayout>

@@ -10,10 +10,10 @@ import { HorizontalDivider } from 'modules/shared/components/HorizontalDivider';
 import { WaveformPlayer } from 'modules/shared/components/AudioPlayer/WaveformPlayer';
 import { Breakpoints } from 'styles/Breakpoints';
 import { TheHosts } from 'modules/home/components/TheHosts';
+import Link from 'next/link';
 import { Faq } from './components/Faq';
 import { ColophonColor } from './components/ColophonColor';
 import { TypeSample } from './components/TypeSample';
-import Link from 'next/link';
 
 const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
   <StyledAboutPage>
@@ -95,44 +95,7 @@ const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
 
       <HorizontalDivider length="short" />
 
-      <div className="large-body">Want to get more specific?</div>
-      <h4>On the Design Side</h4>
-      <div className="two-up">
-        <div>
-          <p>Amy wrote a blog post on Medium, all about the branding and site design.</p>
-        </div>
-        <div>
-          <Image src="/images/logo__medium@2x.png" alt="Medium" width={277} height={43} />
-        </div>
-      </div>
-
-      <br />
-
-      <h4>Want to get even more specific?</h4>
-      <div className="two-up">
-        <div>
-          <div className="large-body">We knew you were our people.</div>
-          <p>We’ve open sourced the code and made it available on GitHub. </p>
-        </div>
-        <div>
-          <Image src="/images/logo__github@2x.png" alt="GitHub" width={247} height={74} />
-        </div>
-      </div>
-
-      <br />
-
-      {/* Audio Player */}
-      <h4>Still curious?</h4>
-      <p>We took an entire episode to talk about the tech behind the site.</p>
-      <WaveformPlayer
-        artwork="/images/cover.png"
-        episodeTitle="The Tech Behind Compressed.fm"
-        audioPath="https://cdn.simplecast.com/audio/cae8b0eb-d9a9-480d-a652-0defcbe047f4/episodes/56025005-71cc-47ec-87a2-0724b9eeed6b/audio/bffa7d33-dae5-46bf-a2a5-a1bd556a7253/default_tc.mp3"
-        episodeNumber={3}
-      />
     </section>
-
-    <VerticalDivider />
 
     {/* frequently asked questions */}
     {faqs.length > 0 && (

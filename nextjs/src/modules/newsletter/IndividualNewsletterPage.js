@@ -18,7 +18,7 @@ import { NewsletterPagination } from './components/NewsletterPagination';
 const IndividualNewsletterPage = ({ dateSent, subject, content, meta, pagination }) => (
   <StyledIndividualNewsletterPage>
     <Head>
-      <title>{subject} || Compressed.fm</title>
+      <title>{subject} || Altus Talks</title>
       {meta && <Meta meta={meta} />}
     </Head>
 

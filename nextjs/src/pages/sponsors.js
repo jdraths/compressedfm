@@ -6,9 +6,10 @@ import { LegalQuery } from 'queries/Queries';
 import MyHead from 'modules/shared/components/Header/MyHead';
 
 export default function Sponsors({ footerLinks, sponsors }) {
+  // TODO: kill this page for now
   return (
     <>
-      <MyHead title="Compressed.fm - Sponsors" />
+      <MyHead title="Altus Talks - Sponsors" />
       <InteriorLayout footerLinks={footerLinks}>
         <SponsorsPage sponsors={sponsors} />
       </InteriorLayout>

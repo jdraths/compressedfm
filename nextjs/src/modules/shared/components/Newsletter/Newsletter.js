@@ -22,10 +22,11 @@ const Newsletter = () => {
     kwesforms.init();
   }, []);
 
+  // TODO: update functionality
   return (
     <StyledNewsletter>
-      <h2>Sign up for the newsletter</h2>
-      <p>Want to stay up to date on our podcast? Get a behind-the-scenes look and know when new episodes drop.</p>
+      <h2>Sign up for our Mailing List</h2>
+      <p>Want to stay up to date on our podcast and everything Altus Academy?</p>
       <form
         onSubmit={handleSubmit()}
         className="kwes-form"

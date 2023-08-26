@@ -9,6 +9,7 @@ import IframePreview from '../components/previews/iframe/IframePreview'
 import SeoPreview from '../components/previews/seo/SeoPreviews'
 
 // Web preview configuration
+// TODO: update this
 const remoteURL = 'https://compressedfm-icqyw7h8z-ahhacreative.vercel.app'
 const localURL = 'http://localhost:3000'
 const previewURL = window.location.hostname === 'localhost' ? localURL : remoteURL

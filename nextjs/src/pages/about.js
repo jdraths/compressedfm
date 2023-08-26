@@ -10,14 +10,15 @@ import { LegalQuery, FaqQuery, GettingStartedEpisodesQuery, PopularEpisodesQuery
 export default function About({ siteSettings, gettingStarted, mostPopular, faqs, footerLinks }) {
   return (
     <>
-      <MyHead title="Compressed.fm - About" />
+      <MyHead title="Altus Talks - About" />
       <InteriorLayout footerLinks={footerLinks}>
         <>
           <Head>
+            {/* TODO: update url below */}
             <Meta
-              seoTitle="About Compressed.fm"
+              seoTitle="About Altus Talks"
               seoDescription=""
-              ogTitle="About Compressed.fm"
+              ogTitle="About Altus Talks"
               ogDescription=""
               ogImage=""
               twitterTitle=""

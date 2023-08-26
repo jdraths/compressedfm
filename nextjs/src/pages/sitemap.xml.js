@@ -7,6 +7,7 @@ export default function SiteMap() {
 }
 
 export async function getServerSideProps({ res }) {
+  // TODO: update this url
   const baseUrl = `https://compressed.fm`;
 
   const query = groq`{

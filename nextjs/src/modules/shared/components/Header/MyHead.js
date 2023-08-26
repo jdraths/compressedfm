@@ -3,13 +3,14 @@
 import Head from 'next/head';
 
 function MyHead({ title, description, image }) {
-  const defaultTitle = 'Compressed.fm';
-  const defaultDescription = 'A weekly podcast about Web Development and Web Design with a little big of zest!';
+  const defaultTitle = 'Altus Talks';
+  const defaultDescription = 'A monthly podcast by the interesting students at Altus Academy';
+  // TODO: change image
   const defaultImage = '/images/podcast-cover.jpg';
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   return (
     <Head>
-      <title>Compressed.fm</title>
+      <title>Altus Talks</title>
       <meta name="title" content={title || defaultTitle} key="title" />
       <meta name="description" content={description || defaultDescription} />
 

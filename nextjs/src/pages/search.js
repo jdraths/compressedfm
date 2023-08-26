@@ -17,7 +17,7 @@ export default function Search({ episodes, footerLinks }) {
   return (
     <InteriorLayout footerLinks={footerLinks}>
       <Head>
-        <title>Search Results for {router.query.keywords} | Compressed.fm</title>
+        <title>Search Results for {router.query.keywords} | Altus Talks</title>
       </Head>
       <SearchPage keywords={router.query.keywords} episodes={episodes} />
     </InteriorLayout>

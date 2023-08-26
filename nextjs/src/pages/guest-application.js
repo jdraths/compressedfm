@@ -8,7 +8,7 @@ import MyHead from 'modules/shared/components/Header/MyHead';
 export default function SponsorApplication({ footerLinks }) {
   return (
     <>
-      <MyHead title="Compressed.fm - Be A Guest" />
+      <MyHead title="Altus Talks - Be A Guest" />
       <InteriorLayout footerLinks={footerLinks}>
         <GuestApplicationPage />
       </InteriorLayout>

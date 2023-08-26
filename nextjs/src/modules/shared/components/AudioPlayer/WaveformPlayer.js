@@ -55,7 +55,7 @@ const WaveformPlayer = ({ artwork = '/images/podcast-cover.jpg', audioPath, epis
       {/* episode meta data */}
       <div className="meta">
         <h4>
-          <span className="show-title">COMPRESSED.fm</span>{' '}
+          <span className="show-title">Altus Talks</span>{' '}
           <span className="episode-number">{episodeNumber && `Episode ${episodeNumber}`}</span>
         </h4>
         <h2>{episodeTitle}</h2>

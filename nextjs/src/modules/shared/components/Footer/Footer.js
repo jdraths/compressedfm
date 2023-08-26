@@ -17,6 +17,7 @@ const Footer = ({ footerLinks }) => {
   return (
     <StyledFooter>
       <VerticalDivider className="vertical-divider" />
+      {/* TODO: update social links */}
       <SocialMedia
         className="social-media"
         instagram={Constants.COMPRESSEDFM_INSTAGRAM_URL}
@@ -25,6 +26,7 @@ const Footer = ({ footerLinks }) => {
         rss={Constants.COMPRESSEDFM_RSS}
       />
 
+      {/* TODO: they had links about legal disclaimers, terms of use, privacy policy */}
       <div className="links-wrapper">
         {footerLinks && (
           <div className="legal">
@@ -38,7 +40,7 @@ const Footer = ({ footerLinks }) => {
           </div>
         )}
         <div className="copyright">
-          <span className="line">Copyright &copy;{getCurrentYear()}. COMPRESSED.fm.</span>{' '}
+          <span className="line">Copyright &copy;{getCurrentYear()}. Altus Talks</span>{' '}
           <span className="line">All Rights Reserved.</span>
         </div>
       </div>
