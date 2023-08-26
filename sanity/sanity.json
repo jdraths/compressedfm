@@ -1,13 +1,11 @@
 {
   "api": {
     "dataset": "production",
-    "projectId": "gqnsvyvh"
+    "projectId": "8e5auuyh"
   },
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
