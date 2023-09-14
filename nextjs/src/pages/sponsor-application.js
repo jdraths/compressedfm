@@ -11,7 +11,9 @@ export default function SponsorApplication({ footerLinks, futureEpisodes, pricin
     <InteriorLayout footerLinks={footerLinks}>
       <MyHead title="Altus Talks - Interested in Sponsoring?" />
 
-      <SponsorApplicationPage futureEpisodes={futureEpisodes} pricing={pricing} />
+      <p style={{ fontSize: '24px', 'text-align': 'center' }}>Interested in Sponsoring?</p>
+      <p style={{ 'text-align': 'center' }}>Coming Soon</p>
+      {/* <SponsorApplicationPage futureEpisodes={futureEpisodes} pricing={pricing} /> */}
     </InteriorLayout>
   );
 }

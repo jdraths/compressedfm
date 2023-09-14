@@ -16,6 +16,7 @@ import { MixinBodyCopy } from 'styles/Typography';
 * COMPONENT
 ---------------------------------------------------- */
 const SponsorApplicationPage = ({ futureEpisodes, pricing }) => {
+  console.log('sponsorApplicationPage', futureEpisodes, pricing);
   const [upcomingEpisodes, setUpcomingEpisodes] = useState();
   const [fileName, setFileName] = useState();
   const {
