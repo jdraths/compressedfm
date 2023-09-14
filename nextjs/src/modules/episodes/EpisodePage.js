@@ -15,6 +15,8 @@ const EpisodePage = ({ episodes }) => {
   // get the first element in the array to feature
   const featuredEpisode = episodes[0];
   const remainingEpisodes = episodes.slice(1);
+
+  console.log('in episode page', featuredEpisode, remainingEpisodes);
   return (
     <StyledEpisodePage>
       {featuredEpisode && (

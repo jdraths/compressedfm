@@ -15,6 +15,7 @@ const Meta = ({ meta }) => {
     twitterImageAlt,
     url,
   } = meta;
+  // TODO: update these meta tagss
   return (
     <>
       {seoTitle && <title>{seoTitle}</title>}

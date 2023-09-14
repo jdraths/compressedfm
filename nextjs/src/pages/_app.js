@@ -4,9 +4,9 @@ import Router from 'next/router';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 import NProgress from 'nprogress';
+import Script from 'next/script';
 import Theme from '../styles/Theme';
 import 'styles/nprogress.css';
-import Script from 'next/script';
 
 // Bind nProgress Bar
 Router.events.on('routeChangeStart', () => {
@@ -18,7 +18,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script src="https://cdn.usefathom.com/script.js" data-site="TRUYKXEJ" defer />
+      {/* <Script src="https://cdn.usefathom.com/script.js" data-site="" defer /> */}
       <UserProvider>
         <ThemeProvider theme={Theme}>
           <GlobalStyle />

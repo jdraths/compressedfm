@@ -8,6 +8,8 @@ function MyHead({ title, description, image }) {
   // TODO: change image
   const defaultImage = '/images/podcast-cover.jpg';
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
+  console.log('my head', image, title, description);
   return (
     <Head>
       <title>Altus Talks</title>

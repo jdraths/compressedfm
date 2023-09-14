@@ -13,7 +13,7 @@ import { VerticalDivider } from '../VerticalDivider';
 ---------------------------------------------------- */
 const Footer = ({ footerLinks }) => {
   const getCurrentYear = () => format(new Date(), 'yyyy');
-
+  console.log('in footer', getCurrentYear());
   return (
     <StyledFooter>
       <VerticalDivider className="vertical-divider" />
@@ -28,7 +28,7 @@ const Footer = ({ footerLinks }) => {
 
       {/* TODO: they had links about legal disclaimers, terms of use, privacy policy */}
       <div className="links-wrapper">
-        {footerLinks && (
+        {footerLinks && footerLinks.length > 0 && (
           <div className="legal">
             <ul>
               {footerLinks.map((link) => (

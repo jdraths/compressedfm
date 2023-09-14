@@ -6,13 +6,16 @@ import { Footer } from '../components/Footer';
 /** -------------------------------------------------
 * COMPONENT
 ---------------------------------------------------- */
-const InteriorLayout = ({ children, footerLinks }) => (
-  <StyledPage>
-    <Header />
-    {children}
-    <Footer footerLinks={footerLinks} />
-  </StyledPage>
-);
+const InteriorLayout = ({ children, footerLinks }) => {
+  console.log('in interiorLayout', children);
+  return (
+    <StyledPage>
+      <Header />
+      {children}
+      <Footer footerLinks={footerLinks} />
+    </StyledPage>
+  );
+};
 
 InteriorLayout.propTypes = {
   children: PropTypes.any,

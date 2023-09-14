@@ -20,4 +20,4 @@ jobs:
       - name: cURL request
         # Hit the webhook endpoint to rebuild  from the "main" branch
         # TODO: update this link with our deployed domain
-        run: curl -X POST -d {} https://www.compressed.fm/api/stats/update
+        # run: curl -X POST -d {} https://www.compressed.fm/api/stats/update
