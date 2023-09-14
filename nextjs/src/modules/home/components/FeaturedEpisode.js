@@ -20,47 +20,63 @@ import { Breakpoints } from 'styles/Breakpoints';
 ---------------------------------------------------- */
 const FeaturedEpisode = ({
   episode: { audioPath, guest, publishedAt, episodeNumber, slug, title, briefDescription, cover },
-}) => (
-  <StyledFeaturedEpisode>
-    <div className="episode-number-date__wrapper">
-      <span className="episode">Episode</span>
-      <span className="episode-number">
-        {EpisodeZeros(episodeNumber)}
-        <EpisodeZeros number={episodeNumber} />
-        {episodeNumber}
-      </span>
-      <span className="episode-publish-date">{formatShortDate(publishedAt)}</span>
-    </div>
-    <div className="podcast-cover">
-      {/* cover art */}
-      <img src={cover || '/images/podcast-cover.jpg'} alt={title} />
-    </div>
-    <div className="episode-content">
-      <h3>
-        <Link href={`/episode/${slug.current}`}>{title}</Link>
-      </h3>
-      <p>{briefDescription}</p>
-      <MoreLink href={`/episode/${slug.current}`} className="more-link" />
-      <ul className="tiny-avatars">
-        <li>
-          <Image src="/images/james.png" height={60} width={60} alt="James Q Quick" />
-        </li>
-        <li>
-          <Image src="/images/amy.png" height={60} width={60} alt="Amy Dutton" />
-        </li>
-        {guest &&
-          guest.map((one, index) => (
-            <li key={index}>
-              <Image src={one.avatar} height={60} width={60} alt={`${one.firstName} ${one.lastName}`} />
-            </li>
-          ))}
-      </ul>
-    </div>
-    <div className="audio-player">
-      <FeaturedAudioPlayer track={audioPath} />
-    </div>
-  </StyledFeaturedEpisode>
-);
+}) => {
+  console.log('in featured episode', {
+    audioPath,
+    guest,
+    publishedAt,
+    episodeNumber,
+    slug,
+    title,
+    briefDescription,
+    cover,
+  });
+  return (
+    <StyledFeaturedEpisode>
+      <div className="episode-number-date__wrapper">
+        <span className="episode">Episode</span>
+        <span className="episode-number">
+          {EpisodeZeros(episodeNumber)}
+          <EpisodeZeros number={episodeNumber} />
+          {episodeNumber}
+        </span>
+        <span className="episode-publish-date">{formatShortDate(publishedAt)}</span>
+      </div>
+      <div className="podcast-cover">
+        {/* cover art */}
+        <img src={cover || '/images/podcast-cover.jpg'} alt={title} />
+      </div>
+      <div className="episode-content">
+        <h3>
+          <Link href={`/episode/${slug.current}`}>{title}</Link>
+        </h3>
+        <p>{briefDescription}</p>
+        <MoreLink href={`/episode/${slug.current}`} className="more-link" />
+        <ul className="tiny-avatars">
+          <li>
+            <Image src="/images/james.png" height={60} width={60} alt="James Q Quick" />
+          </li>
+          <li>
+            <Image src="/images/amy.png" height={60} width={60} alt="Amy Dutton" />
+          </li>
+          {guest &&
+            guest.map((one, index) => (
+              <li key={index}>
+                {one.avatar ? (
+                  <Image src={one.avatar} height={60} width={60} alt={`${one.firstName} ${one.lastName}`} />
+                ) : (
+                  <p>{`${one.firstName} ${one.lastName}`}</p>
+                )}
+              </li>
+            ))}
+        </ul>
+      </div>
+      <div className="audio-player">
+        <FeaturedAudioPlayer track={audioPath} />
+      </div>
+    </StyledFeaturedEpisode>
+  );
+};
 
 FeaturedEpisode.propTypes = {
   episode: PropTypes.shape({

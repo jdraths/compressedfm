@@ -11,16 +11,19 @@ import { Episode } from './Episode';
 /** -------------------------------------------------
 * COMPONENT
 ---------------------------------------------------- */
-const EpisodeGrid = ({ header, episodes }) => (
-  <StyledEpisodeGrid className={header ? 'w-section-header' : 'no-section-header'}>
-    {header && (
-      <div className="section-heading">
-        <h3>{header}</h3>
-      </div>
-    )}
-    {episodes && episodes.map((item) => <Episode className="episode-card" key={item._id} episode={item} />)}
-  </StyledEpisodeGrid>
-);
+const EpisodeGrid = ({ header, episodes }) => {
+  console.log('in episode grid');
+  return (
+    <StyledEpisodeGrid className={header ? 'w-section-header' : 'no-section-header'}>
+      {header && (
+        <div className="section-heading">
+          <h3>{header}</h3>
+        </div>
+      )}
+      {episodes && episodes.map((item) => <Episode className="episode-card" key={item._id} episode={item} />)}
+    </StyledEpisodeGrid>
+  );
+};
 
 EpisodeGrid.propTypes = {
   header: PropTypes.string,
