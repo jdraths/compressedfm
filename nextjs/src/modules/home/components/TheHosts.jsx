@@ -1,32 +1,45 @@
 import styled from 'styled-components';
 import { MixinSectionHeading } from 'styles/Typography';
 import { Breakpoints } from 'styles/Breakpoints';
-import { PersonBio } from './PersonBio';
+import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
 
 const TheHosts = () => (
   <StyledTheHosts>
-    <div className="section-heading__wrapper">
-      <h3 className="section-heading">The Hosts</h3>
-    </div>
-    {/* james */}
-    <PersonBio
-      className="james"
-      avatar="/images/james.png"
-      firstName="James"
-      lastName="Q Quick"
-      jobTitle="Technical Content Creator"
-      largeBody="I am a JavaScript developer, speaker, and teacher with a passion for teaching developers through various mediums of content."
-      body="I'm a firm believer in work-life balance, the on-going pursuit of personal happiness, and empowering others to take control of their career. My personal philosophy of “Learn Build Teach” has blossomed into a growing community of aspiring and established developers focused on helping each succeed."
-      twitter="http://twitter.com/jamesqquick"
-      github="http://github.com/jamesqquick"
-      youtube="http://youtube.com/jamesqquick"
-      twitch="http://twitch.com/jamesqquick"
-      website="https://jamesqquick.com/"
-      tiktok="https://www.tiktok.com/@jamesqquick"
-    />
+    <div className="flex flex-col mx-8 md:mx-16 gap-8">
+      <div className="section-heading__wrapper">
+        <h3 className="section-heading">About Altus Talks</h3>
+      </div>
+      <p className="text-5xl font-bold leading-normal">
+        Altus Talks is a podcast, self-produced by 6th, 7th and 8th graders at Altus Academy.
+      </p>
+      <p className="text-3xl leading-normal">
+        We interview leaders in industry and in our community. We cover topics ranging from personal interest to career
+        advice.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-11 text-3xl gap-16">
+        <div className="col-span-1 md:col-span-5 flex flex-col gap-2">
+          <p className="text-3xl leading-normal font-semibold">We love to ask our guests about:</p>
+          <ul className="list-disc ml-8 leading-normal">
+            <li>their careers</li>
+            <li>their dreams & goals</li>
+            <li>and for the advice they wish they could give to their 6th, 7th and 8th grade selves.</li>
+          </ul>
+        </div>
+        <div className="hidden md:col-span-1 md:flex flex-col items-center justify-center">
+          <VerticalDivider />
+        </div>
+        <div className="col-span-1 md:col-span-5 flex flex-col gap-2">
+          <p className="text-3xl leading-normal font-semibold">We love to brag to our guests about:</p>
+          <ul className="list-disc ml-8 leading-normal">
+            <li>what we’re learning in school</li>
+            <li>what we want to do with our lives</li>
+            <li>and how we want to positively impact the world</li>
+          </ul>
+        </div>
+      </div>
 
-    {/* amy */}
-    <PersonBio
+      {/* amy */}
+      {/* <PersonBio
       className="amy"
       avatar="/images/amy.png"
       firstName="Amy"
@@ -40,7 +53,8 @@ const TheHosts = () => (
       youtube="http://youtube.com/c/selfteachme"
       twitch="http://twitch.com/selfteachme"
       website="https://selfteach.me/"
-    />
+    /> */}
+    </div>
   </StyledTheHosts>
 );
 
@@ -52,18 +66,18 @@ const StyledTheHosts = styled.section`
   max-width: ${(props) => props.theme.pageWidth};
   width: 100%;
 
-  @media (${Breakpoints.medium}) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  // @media (${Breakpoints.medium}) {
+  //   grid-template-columns: repeat(2, minmax(0, 1fr));
+  // }
 
   .section-heading__wrapper {
     margin-bottom: 60px;
     text-align: center;
     width: 100%;
 
-    @media (${Breakpoints.medium}) {
-      grid-column: span 2;
-    }
+    // @media (${Breakpoints.medium}) {
+    //   grid-column: span 2;
+    // }
   }
 
   .section-heading {

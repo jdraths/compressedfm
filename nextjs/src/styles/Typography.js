@@ -17,8 +17,11 @@ const MixinSmallBodyCopy = css`
 const MixinBodyCopy = css`
   color: ${(props) => props.theme.white};
   font-family: ${(props) => props.theme.sansSerif};
-  font-size: 1.6rem;
-  line-height: 1.75;
+  // font-size: 1.6rem;
+  // line-height: 1.75;
+  // tailwind
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
   margin: 0 0 2rem 0;
 
   @media (${Breakpoints.portrait}) {

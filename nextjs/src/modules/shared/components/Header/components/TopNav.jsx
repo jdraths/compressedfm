@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import React from 'react';
 import styled from 'styled-components';
 
 /** -------------------------------------------------
@@ -23,12 +24,12 @@ const TopNav = () => {
         <li className="episodes">
           <Link href="/episodes">Episodes</Link>
         </li>
-        <li className="sponsors">
+        {/* <li className="sponsors">
           <Link href="/sponsors">Sponsors</Link>
-        </li>
-        <li className="newsletter">
+        </li> */}
+        {/* <li className="newsletter">
           <Link href="/newsletter">Newsletter</Link>
-        </li>
+        </li> */}
         <li className="contact">
           <Link href="/contact">Contact</Link>
         </li>

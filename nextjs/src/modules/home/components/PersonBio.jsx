@@ -28,14 +28,18 @@ const PersonBio = ({
   <StyledPersonBio className={className}>
     <div>
       <div className="meta">
-        <div className="avatar">
-          <Image alt="{firstName} {lastName}" src={avatar} height={187} width={187} />
-        </div>
+        {avatar && (
+          <div className="avatar">
+            <Image alt="{firstName} {lastName}" src={avatar} height={187} width={187} />
+          </div>
+        )}
         <div>
-          <h2 className="name">
-            <span className="first">{firstName}</span> <span className="last">{lastName}</span>
-          </h2>
-          <h3 className="title">{jobTitle}</h3>
+          {(firstName || lastName) && (
+            <h2 className="name">
+              <span className="first">{firstName}</span> <span className="last">{lastName}</span>
+            </h2>
+          )}
+          {jobTitle && <h3 className="title">{jobTitle}</h3>}
         </div>
       </div>
     </div>
@@ -92,7 +96,7 @@ const StyledPersonBio = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px;
+    // padding-top: 60px;
     width: 100%;
 
     @media (${Breakpoints.small}) {
@@ -154,8 +158,8 @@ const StyledPersonBio = styled.section`
   .social-media {
     margin: auto auto 0 0;
     justify-self: flex-end;
-    padding-top: 10px;
-    padding-bottom: 60px;
+    // padding-top: 10px;
+    // padding-bottom: 60px;
 
     ul {
       justify-content: flex-start;

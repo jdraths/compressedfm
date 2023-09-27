@@ -20,10 +20,10 @@ const Footer = ({ footerLinks }) => {
       {/* TODO: update social links */}
       <SocialMedia
         className="social-media"
-        instagram={Constants.COMPRESSEDFM_INSTAGRAM_URL}
-        github={Constants.COMPRESSEDFM_GITHUB_URL}
-        twitter={Constants.COMPRESSEDFM_TWITTER_URL}
-        rss={Constants.COMPRESSEDFM_RSS}
+        // instagram={Constants.COMPRESSEDFM_INSTAGRAM_URL}
+        // github={Constants.COMPRESSEDFM_GITHUB_URL}
+        twitter={Constants.ALTUS_TWITTER_URL}
+        // rss={Constants.COMPRESSEDFM_RSS}
       />
 
       {/* TODO: they had links about legal disclaimers, terms of use, privacy policy */}

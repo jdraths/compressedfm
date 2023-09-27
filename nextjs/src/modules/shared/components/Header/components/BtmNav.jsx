@@ -68,9 +68,9 @@ const BtmNav = () => {
         )}
 
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-        <li className="login">
+        {/* <li className="login">
           {user ? <Link href="/api/auth/logout">Logout</Link> : <Link href="/api/auth/login">Login</Link>}
-        </li>
+        </li> */}
       </ul>
     </StyledBtmNav>
   );

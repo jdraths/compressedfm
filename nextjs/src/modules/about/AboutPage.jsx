@@ -18,7 +18,7 @@ import { TypeSample } from './components/TypeSample';
 const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
   <StyledAboutPage>
     {/* reasons */}
-    <section className="reasons">
+    {/* <section className="reasons">
       <h2>
         <span>Why</span> did we start this show?
       </h2>
@@ -30,7 +30,7 @@ const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
             </li>
           ))}
       </ol>
-    </section>
+    </section> */}
     <TheHosts />
     {/* where to begin? */}
     <section className="begin">
@@ -45,7 +45,7 @@ const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
     <VerticalDivider />
 
     {/* colophon */}
-    <section className="colophon">
+    {/* <section className="colophon">
       <div className="section-heading__wrapper">
         <h2 className="section-heading">Colophon</h2>
         <p className="large-body">Since we're web designers and developers, we care about this sort of thing.</p>
@@ -95,7 +95,7 @@ const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
 
       <HorizontalDivider length="short" />
 
-    </section>
+    </section> */}
 
     {/* frequently asked questions */}
     {faqs.length > 0 && (
