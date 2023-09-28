@@ -3,8 +3,8 @@ import { format } from 'date-fns';
 import styled from 'styled-components';
 
 // components
-import { Breakpoints } from 'styles/Breakpoints';
-import { Constants } from 'utils/constants';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import { Constants } from 'src/utils/constants';
 import { SocialMedia } from '../SocialMedia';
 import { VerticalDivider } from '../VerticalDivider';
 

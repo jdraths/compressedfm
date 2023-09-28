@@ -3,10 +3,10 @@ import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router';
 
 // components
-import { Icon } from 'modules/shared/components/Icon';
+import { Icon } from 'src/modules/shared/components/Icon';
 
 // styles
-import { MixinTextField, MixinLabel, MixinButtonWithArrow } from 'styles/Form';
+import { MixinTextField, MixinLabel, MixinButtonWithArrow } from 'src/styles/Form';
 
 /** -------------------------------------------------
 * COMPONENT

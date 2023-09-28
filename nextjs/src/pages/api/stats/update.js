@@ -1,7 +1,7 @@
 import sanityClient from '@sanity/client';
 import groq from 'groq';
 import { find } from 'lodash';
-import { clientWithEdit } from 'utils/client';
+import { clientWithEdit } from 'src/utils/client';
 
 // set the sanity client.
 // This is different than the normal Sanity client because it has read / write

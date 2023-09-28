@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 const ColophonColor = ({ border, color }) => (
   <StyledColophonColor>

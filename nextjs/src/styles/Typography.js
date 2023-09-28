@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 const MixinSmallBodyCopy = css`
   color: ${(props) => props.theme.white};

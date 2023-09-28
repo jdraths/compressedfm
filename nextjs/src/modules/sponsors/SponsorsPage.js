@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // components
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
 import { SponsorGrid } from './components/SponsorGrid';
 
 /** -------------------------------------------------

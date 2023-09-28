@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { MixinLargeBodyCopy } from 'styles/Typography';
+import { MixinLargeBodyCopy } from 'src/styles/Typography';
 
 const LargeText = ({ children }) => <StyledLargeText>{children}</StyledLargeText>;
 

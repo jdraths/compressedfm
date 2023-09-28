@@ -3,13 +3,13 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 
 // component
-import { Icon } from 'modules/shared/components/Icon';
+import { Icon } from 'src/modules/shared/components/Icon';
 
 // utils
-import { calculateTime } from 'utils/timeHelpers';
+import { calculateTime } from 'src/utils/timeHelpers';
 
 // styles
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 // hooks
 import { useAudioPlayer } from './hooks/AudioPlayer';

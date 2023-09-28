@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MixinBodyCopy } from 'styles/Typography';
+import { MixinBodyCopy } from 'src/styles/Typography';
 
 const ListItem = ({ node, children }) => {
   if (node.listItem === 'number') {

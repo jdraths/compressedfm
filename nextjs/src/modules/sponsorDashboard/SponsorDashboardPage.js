@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import { find, sumBy } from 'lodash';
 
 // styles
-import { MixinSectionHeading, MixinPageTitle } from 'styles/Typography';
+import { MixinSectionHeading, MixinPageTitle } from 'src/styles/Typography';
 
 // utils
-import { numberWithCommas } from 'utils/numberHelpers';
+import { numberWithCommas } from 'src/utils/numberHelpers';
 
 // components
-import { SponsorAudioPlayer } from 'modules/shared/components/AudioPlayer/SponsorAudioPlayer';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
-import { ButtonLink } from 'modules/shared/components/ButtonLink';
+import { SponsorAudioPlayer } from 'src/modules/shared/components/AudioPlayer/SponsorAudioPlayer';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
+import { ButtonLink } from 'src/modules/shared/components/ButtonLink';
 import { TotalBlock } from './components/TotalBlock';
 import { ContractItem } from './components/ContractItem';
 import { InvoiceItem } from './components/InvoiceItem';

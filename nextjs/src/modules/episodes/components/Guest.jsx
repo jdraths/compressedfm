@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { MixinSectionHeading, MixinBodyCopy, MixinLargeBodyCopy } from 'styles/Typography';
-import { SocialMedia } from 'modules/shared/components/SocialMedia';
+import { MixinSectionHeading, MixinBodyCopy, MixinLargeBodyCopy } from 'src/styles/Typography';
+import { SocialMedia } from 'src/modules/shared/components/SocialMedia';
 import BlockContent from '@sanity/block-content-to-react';
-import { serializers } from 'modules/shared/blockContent/Serializers';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
 import React from 'react';
 
 const Guest = ({ className, guest }) => (

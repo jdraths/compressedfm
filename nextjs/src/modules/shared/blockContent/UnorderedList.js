@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { MixinBodyCopy } from 'styles/Typography';
+import { MixinBodyCopy } from 'src/styles/Typography';
 
 /** -------------------------------------------------
 * COMPONENT

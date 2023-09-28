@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // components
-import { SocialMedia } from 'modules/shared/components/SocialMedia';
+import { SocialMedia } from 'src/modules/shared/components/SocialMedia';
 
 // styles
-import { MixinSectionHeading, MixinBodyCopy, MixinLargeBodyCopy } from 'styles/Typography';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinSectionHeading, MixinBodyCopy, MixinLargeBodyCopy } from 'src/styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 const PersonBio = ({
   className,

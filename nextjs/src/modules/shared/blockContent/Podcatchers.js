@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Podcatchers as StandardPodcatchers } from 'modules/shared/components/Podcatchers';
+import { Podcatchers as StandardPodcatchers } from 'src/modules/shared/components/Podcatchers';
 
 const Podcatchers = ({ node }) => {
   const { heading } = node;

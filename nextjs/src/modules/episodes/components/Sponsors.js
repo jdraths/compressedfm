@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import BlockContent from '@sanity/block-content-to-react';
-import { MoreLink } from 'modules/shared/components/MoreLink';
-import { serializers } from 'modules/shared/blockContent/Serializers';
-import { MixinBodyCopy, MixinHeading } from 'styles/Typography';
+import { MoreLink } from 'src/modules/shared/components/MoreLink';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
+import { MixinBodyCopy, MixinHeading } from 'src/styles/Typography';
 
 const Sponsors = ({ className, sponsor }) => (
   <StyledSponsors className={className}>

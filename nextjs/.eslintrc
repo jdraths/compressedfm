@@ -1,16 +1,36 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "tailwindcss",
+    "@next/eslint-plugin-next",
+    "prettier",
+    "no-relative-import-paths",
+    "react"
+  ],
   "extends": [
     "wesbos",
-    "plugin:@next/next/recommended"
+    "plugin:@next/next/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
   ],
   "ignorePatterns": "",
   "rules": {
+    // temporary
+    "no-use-before-define": "off",
+    "react/no-unused-prop-types": "off",
+    // end temporary
     "@next/next/no-img-element": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "import/no-unresolved": "off",
     "no-return-await": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": ["off", { "extensions": [".js", ".jsx", ".tsx"] }],
     "jsx-a11y/media-has-caption": "off",
     "semi": "error",
     "react/prop-types": "off",

@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import styled from 'styled-components';
-import { calculateTime } from 'utils/timeHelpers';
-import { formatLongDate } from 'utils/dateHelpers';
-import { EpisodeZeros } from 'utils/EpisodeZeros';
+import { calculateTime } from 'src/utils/timeHelpers';
+import { formatLongDate } from 'src/utils/dateHelpers';
+import { EpisodeZeros } from 'src/utils/EpisodeZeros';
 import { useAudioPlayer } from './hooks/AudioPlayer';
 
 /** -------------------------------------------------
@@ -24,15 +24,8 @@ const SponsorAudioPlayer = ({
   const progressBar = useRef(); // reference for the progress bar
 
   // hooks
-  const {
-    changeAudioToPlayhead,
-    currentTime,
-    duration,
-    isPlaying,
-    onLoadedMetadata,
-    tapSpaceBar,
-    togglePlaying,
-  } = useAudioPlayer(audioPlayer, progressBar);
+  const { changeAudioToPlayhead, currentTime, duration, isPlaying, onLoadedMetadata, tapSpaceBar, togglePlaying } =
+    useAudioPlayer(audioPlayer, progressBar);
 
   const determineTime = (time) => (time / duration) * 100;
 

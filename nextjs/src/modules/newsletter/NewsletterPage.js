@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Newsletter } from 'modules/shared/components/Newsletter';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
+import { Newsletter } from 'src/modules/shared/components/Newsletter';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
 import { NewsletterListItem } from './components/NewsletterListItem';
 
 const NewsletterPage = (props) => {

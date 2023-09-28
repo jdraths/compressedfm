@@ -1,13 +1,13 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
 
 // components
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { IndividualEpisodePage } from 'modules/episodes/IndividualEpisodePage';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { IndividualEpisodePage } from 'src/modules/episodes/IndividualEpisodePage';
 
 // queries
-import { AllEpisodesQuery, LegalQuery } from 'queries/Queries';
-import MyHead from 'modules/shared/components/Header/MyHead';
+import { AllEpisodesQuery, LegalQuery } from 'src/queries/Queries';
+import MyHead from 'src/modules/shared/components/Header/MyHead';
 
 export default function Episode({ episode, footerLinks }) {
   console.log('in episode', episode, footerLinks);

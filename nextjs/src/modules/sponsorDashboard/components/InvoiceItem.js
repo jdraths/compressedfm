@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Icon } from 'modules/shared/components/Icon';
-import { Tag } from 'modules/shared/components/Tag';
+import { Icon } from 'src/modules/shared/components/Icon';
+import { Tag } from 'src/modules/shared/components/Tag';
 import Link from 'next/link';
 
 /** -------------------------------------------------

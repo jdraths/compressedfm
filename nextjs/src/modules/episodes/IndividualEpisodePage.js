@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
-import { Podcatchers } from 'modules/shared/components/Podcatchers';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
-import { EpisodeGrid } from 'modules/shared/components/EpisodeGrid';
-import { Newsletter } from 'modules/shared/components/Newsletter';
-import { WaveformPlayer } from 'modules/shared/components/AudioPlayer/WaveformPlayer';
+import { Podcatchers } from 'src/modules/shared/components/Podcatchers';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
+import { EpisodeGrid } from 'src/modules/shared/components/EpisodeGrid';
+import { Newsletter } from 'src/modules/shared/components/Newsletter';
+import { WaveformPlayer } from 'src/modules/shared/components/AudioPlayer/WaveformPlayer';
 import { EpisodeSummary } from './components/EpisodeSummary';
 import { Guest } from './components/Guest';
 import { JumpLinks } from './components/JumpLinks';

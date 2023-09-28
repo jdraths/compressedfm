@@ -3,14 +3,14 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 // utilities
-import { EpisodeZeros } from 'utils/EpisodeZeros';
+import { EpisodeZeros } from 'src/utils/EpisodeZeros';
 
 // utilities
-import { formatLongDate } from 'utils/dateHelpers';
+import { formatLongDate } from 'src/utils/dateHelpers';
 
 // styles
-import { Breakpoints } from 'styles/Breakpoints';
-import { MixinBodyCopy } from 'styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import { MixinBodyCopy } from 'src/styles/Typography';
 import { MoreLink } from '../MoreLink';
 
 /** -------------------------------------------------

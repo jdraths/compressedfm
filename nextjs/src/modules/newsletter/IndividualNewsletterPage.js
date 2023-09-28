@@ -3,13 +3,13 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import BlockContent from '@sanity/block-content-to-react';
 
-import { Breakpoints } from 'styles/Breakpoints';
-import { formatShortDate } from 'utils/dateHelpers';
-import { Meta } from 'modules/shared/components/Meta';
-import { MixinBodyCopy, MixinPageTitle, MixinSectionHeading } from 'styles/Typography';
-import { Newsletter } from 'modules/shared/components/Newsletter';
-import { serializers } from 'modules/shared/blockContent/Serializers';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import { formatShortDate } from 'src/utils/dateHelpers';
+import { Meta } from 'src/modules/shared/components/Meta';
+import { MixinBodyCopy, MixinPageTitle, MixinSectionHeading } from 'src/styles/Typography';
+import { Newsletter } from 'src/modules/shared/components/Newsletter';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
 import { NewsletterPagination } from './components/NewsletterPagination';
 
 /** -------------------------------------------------

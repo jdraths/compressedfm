@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { Icon } from 'modules/shared/components/Icon';
-import { Breakpoints } from 'styles/Breakpoints';
-import { formatLongDate } from 'utils/dateHelpers';
+import { Icon } from 'src/modules/shared/components/Icon';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import { formatLongDate } from 'src/utils/dateHelpers';
 
 /** -------------------------------------------------
 * COMPONENT

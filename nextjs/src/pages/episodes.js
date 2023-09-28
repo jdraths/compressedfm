@@ -1,8 +1,8 @@
-import client from 'utils/client';
-import { EpisodePage } from 'modules/episodes';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { LegalQuery, AllEpisodesQuery } from 'queries/Queries';
-import MyHead from 'modules/shared/components/Header/MyHead';
+import client from 'src/utils/client';
+import { EpisodePage } from 'src/modules/episodes';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { LegalQuery, AllEpisodesQuery } from 'src/queries/Queries';
+import MyHead from 'src/modules/shared/components/Header/MyHead';
 
 export default function Episodes({ episodes, footerLinks }) {
   console.log('in episodes', episodes, footerLinks);

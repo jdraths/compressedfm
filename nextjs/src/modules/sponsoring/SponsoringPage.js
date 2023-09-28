@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 // components
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
-import { TheHosts } from 'modules/home/components/TheHosts';
-import { Podcatchers } from 'modules/shared/components/Podcatchers';
-import { Icon } from 'modules/shared/components/Icon';
-import { ButtonLink } from 'modules/shared/components/ButtonLink';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
+import { TheHosts } from 'src/modules/home/components/TheHosts';
+import { Podcatchers } from 'src/modules/shared/components/Podcatchers';
+import { Icon } from 'src/modules/shared/components/Icon';
+import { ButtonLink } from 'src/modules/shared/components/ButtonLink';
 
 // styles
-import { MixinBodyCopy, MixinLargeBodyCopy, MixinPageTitle, MixinSectionHeading } from 'styles/Typography';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinBodyCopy, MixinLargeBodyCopy, MixinPageTitle, MixinSectionHeading } from 'src/styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
 import Link from 'next/link';
 
 /** -------------------------------------------------

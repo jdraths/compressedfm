@@ -2,13 +2,13 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import BlockContent from '@sanity/block-content-to-react';
-import { serializers } from 'modules/shared/blockContent/Serializers';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
 
 // components
-import { Icon } from 'modules/shared/components/Icon';
+import { Icon } from 'src/modules/shared/components/Icon';
 
 // styles
-import { MixinBodyCopy } from 'styles/Typography';
+import { MixinBodyCopy } from 'src/styles/Typography';
 
 /** -------------------------------------------------
 * COMPONENT

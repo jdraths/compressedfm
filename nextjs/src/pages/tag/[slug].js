@@ -1,8 +1,8 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
-import { TagPage } from 'modules/tag';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { LegalQuery } from 'queries/Queries';
+import { TagPage } from 'src/modules/tag';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { LegalQuery } from 'src/queries/Queries';
 
 export default function Tag({ content, footerLinks }) {
   return (

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // styles
-import { Zindex } from 'styles/Zindex';
+import { Zindex } from 'src/styles/Zindex';
 
 /** -------------------------------------------------
 * COMPONENT

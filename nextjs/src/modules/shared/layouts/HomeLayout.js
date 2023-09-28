@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { HeaderHome } from 'modules/shared/components/Header/HeaderHome';
-import { Footer } from 'modules/shared/components/Footer';
+import { HeaderHome } from 'src/modules/shared/components/Header/HeaderHome';
+import { Footer } from 'src/modules/shared/components/Footer';
 
 /** -------------------------------------------------
 * COMPONENT

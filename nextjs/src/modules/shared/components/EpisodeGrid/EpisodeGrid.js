@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // styles
-import { MixinSectionHeading } from 'styles/Typography';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinSectionHeading } from 'src/styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 // components
 import { Episode } from './Episode';

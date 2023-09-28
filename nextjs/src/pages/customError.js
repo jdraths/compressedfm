@@ -1,4 +1,4 @@
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 
 export default function CustomError({ text = 'Something went wrong', status = 500 }) {
   return (

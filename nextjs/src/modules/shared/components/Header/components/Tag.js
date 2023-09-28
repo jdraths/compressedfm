@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { slugify } from 'utils/slugify';
+import { slugify } from 'src/utils/slugify';
 
 /** -------------------------------------------------
 * COMPONENT
