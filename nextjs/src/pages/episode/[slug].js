@@ -6,7 +6,7 @@ import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 import { IndividualEpisodePage } from 'src/modules/episodes/IndividualEpisodePage';
 
 // queries
-import { AllEpisodesQuery, LegalQuery } from 'queries/Queries';
+import { AllEpisodesQuery, LegalQuery } from 'src/queries/Queries';
 import MyHead from 'src/modules/shared/components/Header/MyHead';
 
 export default function Episode({ episode, footerLinks }) {

@@ -2,7 +2,7 @@ import client from 'src/utils/client';
 import groq from 'groq';
 import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 import { NewsletterPage } from 'src/modules/newsletter';
-import { AllNewslettersQuery, LegalQuery } from 'queries/Queries';
+import { AllNewslettersQuery, LegalQuery } from 'src/queries/Queries';
 
 export default function Newsletter({ footerLinks, newsletters }) {
   return (

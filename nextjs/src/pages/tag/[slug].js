@@ -2,7 +2,7 @@ import client from 'src/utils/client';
 import groq from 'groq';
 import { TagPage } from 'src/modules/tag';
 import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
-import { LegalQuery } from 'queries/Queries';
+import { LegalQuery } from 'src/queries/Queries';
 
 export default function Tag({ content, footerLinks }) {
   return (

@@ -3,7 +3,7 @@ import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 import { SponsorDashboardPage } from 'src/modules/sponsorDashboard';
 import { getSession, withPageAuthRequired } from '@auth0/nextjs-auth0';
 
-import { LegalQuery, SponsorBySlugQuery } from 'queries/Queries';
+import { LegalQuery, SponsorBySlugQuery } from 'src/queries/Queries';
 import CustomError from '../../customError';
 
 export default function Sponsor({ sponsor, error = null, footerLinks }) {

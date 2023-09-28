@@ -1,7 +1,7 @@
 import client from 'src/utils/client';
 import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 import { SponsoringPage } from 'src/modules/sponsoring';
-import { LegalQuery, settingsQuery } from 'queries/Queries';
+import { LegalQuery, settingsQuery } from 'src/queries/Queries';
 import MyHead from 'src/modules/shared/components/Header/MyHead';
 
 export default function Sponsoring({ footerLinks, settings }) {

@@ -1,5 +1,5 @@
 import client from 'src/utils/client';
-import { AllEpisodesQuery } from 'queries/Queries';
+import { AllEpisodesQuery } from 'src/queries/Queries';
 
 // TODO: update this website
 const website = 'https://altustalks.vercel.app';

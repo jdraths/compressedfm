@@ -4,7 +4,7 @@ import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 import { IndividualNewsletterPage } from 'src/modules/newsletter/IndividualNewsletterPage';
 
 // query
-import { AllNewslettersQuery, LegalQuery } from 'queries/Queries';
+import { AllNewslettersQuery, LegalQuery } from 'src/queries/Queries';
 
 export default function IndividualNewsletter({ footerLinks, newsletter }) {
   return (
