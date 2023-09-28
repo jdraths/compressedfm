@@ -3,6 +3,7 @@ import { MixinSectionHeading, MixinBodyCopy, MixinLargeBodyCopy } from 'styles/T
 import { SocialMedia } from 'modules/shared/components/SocialMedia';
 import BlockContent from '@sanity/block-content-to-react';
 import { serializers } from 'modules/shared/blockContent/Serializers';
+import React from 'react';
 
 const Guest = ({ className, guest }) => (
   <div className={className}>
