@@ -57,8 +57,8 @@
   "name": "nextjs",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "dev": "prisma generate && next dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
