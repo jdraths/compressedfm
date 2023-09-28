@@ -13,14 +13,16 @@ const Guest = ({ className, guest }) => (
           <StyledPersonBio key={_id}>
             <div>
               <div className="meta">
-                <div className="avatar">
-                  <img alt="{firstName} {lastName}" src={avatar} />
-                </div>
+                {avatar && (
+                  <div className="avatar">
+                    <img alt="{firstName} {lastName}" src={avatar} />
+                  </div>
+                )}
                 <div>
                   <h2 className="name">
                     <span className="first">{firstName}</span> <span className="last">{lastName}</span>
                   </h2>
-                  <h3 className="title">{jobTitle}</h3>
+                  {jobTitle && <h3 className="title">{jobTitle}</h3>}
                 </div>
               </div>
             </div>

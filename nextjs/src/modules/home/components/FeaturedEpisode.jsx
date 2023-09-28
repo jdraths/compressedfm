@@ -51,25 +51,28 @@ const FeaturedEpisode = ({
           <Link href={`/episode/${slug.current}`}>{title}</Link>
         </h3>
         <p>{briefDescription}</p>
-        <MoreLink href={`/episode/${slug.current}`} className="more-link" />
-        <ul className="tiny-avatars">
-          <li>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2"> */}
+        <MoreLink href={`/episode/${slug.current}`} className="more-link" label="view episode" />
+        {guest && <p>Guests:</p>}
+        <div className="hidden md:flex flex-row flex-wrap divide-x items-center">
+          {/* <li>
             <Image src="/images/james.png" height={60} width={60} alt="James Q Quick" />
           </li>
           <li>
             <Image src="/images/amy.png" height={60} width={60} alt="Amy Dutton" />
-          </li>
+          </li> */}
           {guest &&
             guest.map((one, index) => (
-              <li key={index}>
+              <div className="p-4 text-3xl" key={index}>
                 {one.avatar ? (
                   <Image src={one.avatar} height={60} width={60} alt={`${one.firstName} ${one.lastName}`} />
                 ) : (
-                  <p>{`${one.firstName} ${one.lastName}`}</p>
+                  <span className="">{`${one.firstName} ${one.lastName}`}</span>
                 )}
-              </li>
+              </div>
             ))}
-        </ul>
+        </div>
+        {/* </div> */}
       </div>
       <div className="audio-player">
         <FeaturedAudioPlayer track={audioPath} />
@@ -218,7 +221,7 @@ const StyledFeaturedEpisode = styled.section`
 
   .more-link {
     position: relative;
-    top: -30px;
+    // top: -30px;
 
     @media (${Breakpoints.portrait}) {
       top: 0;
@@ -233,7 +236,7 @@ const StyledFeaturedEpisode = styled.section`
     padding: 0;
     pointer-events: none;
     position: relative;
-    top: -25px;
+    // top: -25px;
 
     @media (${Breakpoints.portrait}) {
       display: flex;

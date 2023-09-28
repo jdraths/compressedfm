@@ -14,7 +14,7 @@ import Link from 'next/link';
 ---------------------------------------------------- */
 const Podcatchers = ({ className, showHeading }) => (
   <StyledPodcatcher className={className}>
-    {showHeading && <h3>SUBSCRIBE ON YOUR PODCATCHER OF CHOICE</h3>}
+    {showHeading && <h3>SUBSCRIBE ON YOUR PODCATCHER OF CHOICE (soon&#8482;)</h3>}
     <ul>
       {/* ITUNES */}
       {Constants.ITUNES_URL !== '' && (

@@ -6,8 +6,10 @@ import { Icon } from 'modules/shared/components/Icon';
 const MoreLink = ({ className, href, label }) => (
   <StyledMoreLink className={className}>
     <Link href={href}>
-      {label}
-      <Icon name="arrow" />
+      <span className="flex flex-row items-center">
+        {label}
+        <Icon name="arrow" />
+      </span>
     </Link>
   </StyledMoreLink>
 );
@@ -26,10 +28,10 @@ const StyledMoreLink = styled.div`
     }
 
     svg {
-      position: relative;
-      left: -5px;
-      top: 10px;
-      transition: transform 0.25s ease-in-out;
+      // position: relative;
+      // left: -5px;
+      // top: 10px;
+      // transition: transform 0.25s ease-in-out;
     }
 
     &:hover svg {
