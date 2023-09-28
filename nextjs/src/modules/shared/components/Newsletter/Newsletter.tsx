@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { useForm } from 'react-hook-form';
-import kwesforms from 'kwesforms';
+import { SubmitHandler, useForm } from 'react-hook-form';
 
 // component
 import { Icon } from 'src/modules/shared/components/Icon';
@@ -10,24 +8,65 @@ import { Icon } from 'src/modules/shared/components/Icon';
 import { MixinBodyCopy } from 'src/styles/Typography';
 import { MixinTextField, MixinLabel, MixinButtonWithArrow } from 'src/styles/Form';
 import { Breakpoints } from 'src/styles/Breakpoints';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { InferType, object, string } from 'yup';
+import { toast } from 'react-toastify';
+
+// Define the validation schema
+const schema = object().shape({
+  email: string().email().required(),
+});
+
+type FormData = InferType<typeof schema>;
 
 /** -------------------------------------------------
 * COMPONENT
 ---------------------------------------------------- */
 const Newsletter = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = () => {};
+  // const { register, handleSubmit } = useForm();
+  // const onSubmit = () => {};
 
-  useEffect(() => {
-    kwesforms.init();
-  }, []);
+  // useEffect(() => {
+  //   kwesforms.init();
+  // }, []);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: yupResolver(schema),
+  });
+
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    try {
+      const post = await fetch('/api/newsletterSignup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      if (post.ok) {
+        toast.success('Email saved!');
+      } else if (post.status === 400) {
+        const errorMsg: { message: string } = await post.json();
+        throw new Error(errorMsg.message);
+      } else if (post.status !== 200) {
+        throw new Error('Something went wrong');
+      }
+    } catch (error) {
+      console.error('There was an error sending the email:', error);
+      toast.error(error.message);
+    }
+  };
 
   // TODO: update functionality
   return (
     <StyledNewsletter>
       <h2>Sign up for our Mailing List</h2>
       <p>Want to stay up to date on our podcast and everything Altus Academy?</p>
-      <form
+      {/* <form
         onSubmit={handleSubmit()}
         className="kwes-form"
         action="https://kwes.io/api/foreign/forms/VBsOqTJ8MTds1LU9utSf"
@@ -35,6 +74,14 @@ const Newsletter = () => {
         <input type="email" name="email" id="email" {...register('email', { required: true })} placeholder=" " />
         <label htmlFor="email">Email Address</label>
         <button className="submit" type="submit" onClick={onSubmit}>
+          <Icon name="arrow" height="64" width="64" />
+        </button>
+      </form> */}
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input type="email" id="email" name="email" {...register('email', { required: true })} placeholder=" " />
+        <label htmlFor="email">Email Address</label>
+        {errors?.email && <span>{errors.email.message}</span>}
+        <button className="submit" type="submit">
           <Icon name="arrow" height="64" width="64" />
         </button>
       </form>

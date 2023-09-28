@@ -8,6 +8,8 @@ import NProgress from 'nprogress';
 import Script from 'next/script';
 import Theme from '../styles/Theme';
 import '../styles/nprogress.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Bind nProgress Bar
 Router.events.on('routeChangeStart', () => {
@@ -24,6 +26,18 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={Theme}>
           <GlobalStyle />
           <Component {...pageProps} />
+          <ToastContainer
+            position="bottom-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            pauseOnHover
+            theme="dark"
+            className="text-3xl"
+          />
         </ThemeProvider>
       </UserProvider>
     </>
