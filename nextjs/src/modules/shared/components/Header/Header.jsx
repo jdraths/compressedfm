@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 // components
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 import { Navigation } from './components/Navigation';
 import { Hamburger } from './components/Hamburger';
 

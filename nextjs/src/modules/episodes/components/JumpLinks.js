@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { calculateTime } from 'utils/timeHelpers';
+import { calculateTime } from 'src/utils/timeHelpers';
 
 // styles
-import { Breakpoints } from 'styles/Breakpoints';
-import { MixinBodyCopy, MixinHeading } from 'styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import { MixinBodyCopy, MixinHeading } from 'src/styles/Typography';
 
 /** -------------------------------------------------
 * COMPONENT

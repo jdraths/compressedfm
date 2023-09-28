@@ -7,7 +7,7 @@ import { UserProvider } from '@auth0/nextjs-auth0/client';
 import NProgress from 'nprogress';
 import Script from 'next/script';
 import Theme from '../styles/Theme';
-import 'styles/nprogress.css';
+import '../styles/nprogress.css';
 
 // Bind nProgress Bar
 Router.events.on('routeChangeStart', () => {

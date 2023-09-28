@@ -1,4 +1,4 @@
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
 // import { SponsorApplicationPage } from "modules/sponsorApplication";
 
 export default function Upcoming() {

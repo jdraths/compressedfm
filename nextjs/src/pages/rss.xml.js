@@ -1,4 +1,4 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import { AllEpisodesQuery } from 'queries/Queries';
 
 // TODO: update this website

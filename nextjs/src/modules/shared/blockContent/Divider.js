@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
-import { HorizontalDivider } from 'modules/shared/components/HorizontalDivider';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
+import { HorizontalDivider } from 'src/modules/shared/components/HorizontalDivider';
 
 const Divider = ({ node }) => {
   const { type } = node;

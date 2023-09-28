@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { MoreLink } from 'modules/shared/components/MoreLink';
+import { MoreLink } from 'src/modules/shared/components/MoreLink';
 
 /** -------------------------------------------------
 * COMPONENT

@@ -4,16 +4,17 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 // utilities
-import { EpisodeZeros } from 'utils/EpisodeZeros';
-import { formatShortDate } from 'utils/dateHelpers';
+import { EpisodeZeros } from 'src/utils/EpisodeZeros';
+import { formatShortDate } from 'src/utils/dateHelpers';
 
 // components
-import { MoreLink } from 'modules/shared/components/MoreLink';
-import { FeaturedAudioPlayer } from 'modules/shared/components/AudioPlayer/FeaturedAudioPlayer';
+import { MoreLink } from 'src/modules/shared/components/MoreLink';
+import { FeaturedAudioPlayer } from 'src/modules/shared/components/AudioPlayer/FeaturedAudioPlayer';
 
 // styles
-import { MixinBodyCopy } from 'styles/Typography';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinBodyCopy } from 'src/styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import React from 'react';
 
 /** -------------------------------------------------
 * COMPONENT

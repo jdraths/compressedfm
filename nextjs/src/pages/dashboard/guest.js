@@ -1,6 +1,6 @@
 import { useUser, withPageAuthRequired, getSession } from '@auth0/nextjs-auth0/client';
 import CustomError from 'pages/customError';
-import client from 'utils/client';
+import client from 'src/utils/client';
 import { LegalQuery, GuestQuery } from 'queries/Queries';
 
 export default function Guest({ guest }) {

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import { MoreLink } from 'modules/shared/components/MoreLink';
+import { MoreLink } from 'src/modules/shared/components/MoreLink';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { formatLongDate } from 'utils/dateHelpers';
-import { Breakpoints } from 'styles/Breakpoints';
+import { formatLongDate } from 'src/utils/dateHelpers';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 /** -------------------------------------------------
 * COMPONENT

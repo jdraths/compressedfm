@@ -1,7 +1,7 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { IndividualNewsletterPage } from 'modules/newsletter/IndividualNewsletterPage';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { IndividualNewsletterPage } from 'src/modules/newsletter/IndividualNewsletterPage';
 
 // query
 import { AllNewslettersQuery, LegalQuery } from 'queries/Queries';

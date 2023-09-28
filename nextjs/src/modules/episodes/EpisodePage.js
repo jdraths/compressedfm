@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // components
-import { EpisodeGrid } from 'modules/shared/components/EpisodeGrid';
-import { Newsletter } from 'modules/shared/components/Newsletter';
-import { Podcatchers } from 'modules/shared/components/Podcatchers';
-import { FeaturedEpisode } from 'modules/home/components/FeaturedEpisode';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
+import { EpisodeGrid } from 'src/modules/shared/components/EpisodeGrid';
+import { Newsletter } from 'src/modules/shared/components/Newsletter';
+import { Podcatchers } from 'src/modules/shared/components/Podcatchers';
+import { FeaturedEpisode } from 'src/modules/home/components/FeaturedEpisode';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
 
 /** -------------------------------------------------
 * COMPONENT

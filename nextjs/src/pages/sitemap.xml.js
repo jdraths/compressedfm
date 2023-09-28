@@ -1,6 +1,6 @@
 // Reference: https://scottspence.com/2021/02/02/dynamic-sitemap-generation-with-nextjs-and-sanity/
 import groq from 'groq';
-import sanityClient from 'utils/client';
+import sanityClient from 'src/utils/client';
 
 export default function SiteMap() {
   return <div>loading</div>;

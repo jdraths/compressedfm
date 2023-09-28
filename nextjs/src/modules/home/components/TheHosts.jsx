@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { MixinSectionHeading } from 'styles/Typography';
-import { Breakpoints } from 'styles/Breakpoints';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
+import { MixinSectionHeading } from 'src/styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
 
 const TheHosts = () => (
   <StyledTheHosts>

@@ -27,6 +27,8 @@
   "devDependencies": {
     "@neutrinojs/airbnb": "^9.5.0",
     "@next/eslint-plugin-next": "^12.0.3",
+    "@types/node": "^20.7.1",
+    "@types/react": "^18.2.23",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -39,7 +41,8 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "install-peerdeps": "^3.0.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "typescript": "^5.2.2"
   },
   "name": "nextjs",
   "private": true,

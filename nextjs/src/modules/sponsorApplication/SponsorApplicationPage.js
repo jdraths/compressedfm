@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
-import { formatMoney, removeDoubleZeros } from 'utils/moneyHelpers';
-import { formatShortDate, formatDashes } from 'utils/dateHelpers';
+import { formatMoney, removeDoubleZeros } from 'src/utils/moneyHelpers';
+import { formatShortDate, formatDashes } from 'src/utils/dateHelpers';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import kwesforms from 'kwesforms';
 
 // components
-import { Button } from 'modules/shared/form/Button';
+import { Button } from 'src/modules/shared/form/Button';
 
 // styles
-import { MixinLabel, MixinTextField, MixinTextarea, MixinSelect } from 'styles/Form';
-import { MixinBodyCopy } from 'styles/Typography';
+import { MixinLabel, MixinTextField, MixinTextarea, MixinSelect } from 'src/styles/Form';
+import { MixinBodyCopy } from 'src/styles/Typography';
 
 /** -------------------------------------------------
 * COMPONENT

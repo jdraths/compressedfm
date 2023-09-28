@@ -1,8 +1,8 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { LegalPage } from 'modules/legal';
-import MyHead from 'modules/shared/components/Header/MyHead';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { LegalPage } from 'src/modules/legal';
+import MyHead from 'src/modules/shared/components/Header/MyHead';
 import { LegalQuery } from '../../queries/Queries';
 
 export default function Legal({ footerLinks, legal }) {

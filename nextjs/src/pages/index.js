@@ -1,8 +1,8 @@
-import client from 'utils/client';
-import { HomePage } from 'modules/home';
-import { HomeLayout } from 'modules/shared/layouts/HomeLayout';
-import { LegalQuery, RecentEpisodesQuery } from 'queries/Queries';
-import MyHead from 'modules/shared/components/Header/MyHead';
+import client from 'src/utils/client';
+import { HomeLayout } from 'src/modules/shared/layouts/HomeLayout';
+import { LegalQuery, RecentEpisodesQuery } from 'src/queries/Queries';
+import MyHead from 'src/modules/shared/components/Header/MyHead';
+import { HomePage } from 'src/modules/home';
 
 export default function Home({ episodes, footerLinks }) {
   return (

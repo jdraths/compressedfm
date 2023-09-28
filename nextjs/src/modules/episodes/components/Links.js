@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { MixinBodyCopy, MixinHeading } from 'styles/Typography';
-import { Icon } from 'modules/shared/components/Icon';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinBodyCopy, MixinHeading } from 'src/styles/Typography';
+import { Icon } from 'src/modules/shared/components/Icon';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 const Links = ({ listLink }) => (
   <StyledLinks>

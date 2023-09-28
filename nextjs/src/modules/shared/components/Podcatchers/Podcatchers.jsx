@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // utilities
-import { Constants } from 'utils/constants';
+import { Constants } from 'src/utils/constants';
 
 // styles
-import { Breakpoints } from 'styles/Breakpoints';
-import Link from 'next/link';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 /** -------------------------------------------------
 * COMPONENT

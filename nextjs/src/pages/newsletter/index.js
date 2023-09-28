@@ -1,7 +1,7 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { NewsletterPage } from 'modules/newsletter';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { NewsletterPage } from 'src/modules/newsletter';
 import { AllNewslettersQuery, LegalQuery } from 'queries/Queries';
 
 export default function Newsletter({ footerLinks, newsletters }) {

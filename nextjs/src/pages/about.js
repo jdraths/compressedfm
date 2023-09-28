@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { AboutPage } from 'modules/about';
-import { Meta } from 'modules/shared/components/Meta';
-import MyHead from 'modules/shared/components/Header/MyHead';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { AboutPage } from 'src/modules/about';
+import { Meta } from 'src/modules/shared/components/Meta';
+import MyHead from 'src/modules/shared/components/Header/MyHead';
 import { LegalQuery, FaqQuery, GettingStartedEpisodesQuery, PopularEpisodesQuery } from '../queries/Queries';
 
 export default function About({ siteSettings, gettingStarted, mostPopular, faqs, footerLinks }) {

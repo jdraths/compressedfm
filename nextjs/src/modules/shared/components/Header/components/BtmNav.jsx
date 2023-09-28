@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { useUser } from '@auth0/nextjs-auth0/client';
-import client from 'utils/client';
-import { GuestQuery, sponsorQuery } from 'queries/Queries';
+import client from 'src/utils/client';
+import { GuestQuery, sponsorQuery } from 'src/queries/Queries';
 
 /** -------------------------------------------------
 * COMPONENT

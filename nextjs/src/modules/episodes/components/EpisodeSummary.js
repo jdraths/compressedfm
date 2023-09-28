@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 // utilities
-import { EpisodeZeros } from 'utils/EpisodeZeros';
-import { formatLongDate } from 'utils/dateHelpers';
+import { EpisodeZeros } from 'src/utils/EpisodeZeros';
+import { formatLongDate } from 'src/utils/dateHelpers';
 
 // styles
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 /** -------------------------------------------------
 * COMPONENT

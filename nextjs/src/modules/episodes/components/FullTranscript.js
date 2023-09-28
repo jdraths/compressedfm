@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import BlockContent from '@sanity/block-content-to-react';
-import { serializers } from 'modules/shared/blockContent/Serializers';
-import { calculateTime } from 'utils/timeHelpers';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
+import { calculateTime } from 'src/utils/timeHelpers';
 
 // styles
-import { MixinHeading } from 'styles/Typography';
+import { MixinHeading } from 'src/styles/Typography';
 
 /** -------------------------------------------------
 * COMPONENT

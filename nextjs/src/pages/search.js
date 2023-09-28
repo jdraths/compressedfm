@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
 
 // components
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { SearchPage } from 'modules/search';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { SearchPage } from 'src/modules/search';
 import { LegalQuery } from '../queries/Queries';
 
 /** -------------------------------------------------

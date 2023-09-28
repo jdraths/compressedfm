@@ -4,12 +4,12 @@ import { useForm } from 'react-hook-form';
 import kwesforms from 'kwesforms';
 
 // component
-import { Icon } from 'modules/shared/components/Icon';
+import { Icon } from 'src/modules/shared/components/Icon';
 
 // styles
-import { MixinBodyCopy } from 'styles/Typography';
-import { MixinTextField, MixinLabel, MixinButtonWithArrow } from 'styles/Form';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinBodyCopy } from 'src/styles/Typography';
+import { MixinTextField, MixinLabel, MixinButtonWithArrow } from 'src/styles/Form';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 /** -------------------------------------------------
 * COMPONENT

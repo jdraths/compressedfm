@@ -1,9 +1,9 @@
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
-import { InteriorLayout } from 'modules/shared/layouts/InteriorLayout';
-import { SponsorApplicationPage } from 'modules/sponsorApplication';
+import { InteriorLayout } from 'src/modules/shared/layouts/InteriorLayout';
+import { SponsorApplicationPage } from 'src/modules/sponsorApplication';
 import { LegalQuery, pricingQuery } from 'queries/Queries';
-import MyHead from 'modules/shared/components/Header/MyHead';
+import MyHead from 'src/modules/shared/components/Header/MyHead';
 
 export default function SponsorApplication({ footerLinks, futureEpisodes, pricing }) {
   // TODO: make sure this doesn't show

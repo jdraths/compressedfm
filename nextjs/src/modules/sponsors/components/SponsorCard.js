@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import BlockContent from '@sanity/block-content-to-react';
 
 // components
-import { MoreLink } from 'modules/shared/components/MoreLink';
-import { serializers } from 'modules/shared/blockContent/Serializers';
+import { MoreLink } from 'src/modules/shared/components/MoreLink';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
 
 // styles
-import { MixinBodyCopy } from 'styles/Typography';
-import { Breakpoints } from 'styles/Breakpoints';
+import { MixinBodyCopy } from 'src/styles/Typography';
+import { Breakpoints } from 'src/styles/Breakpoints';
 
 /** -------------------------------------------------
 * COMPONENT

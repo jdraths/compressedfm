@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 
 // components
-import { Button } from 'modules/shared/form/Button';
+import { Button } from 'src/modules/shared/form/Button';
 
 // styles
-import { MixinForm, MixinLabel, MixinTextField, MixinTextarea, MixinSelect } from 'styles/Form';
+import { MixinForm, MixinLabel, MixinTextField, MixinTextarea, MixinSelect } from 'src/styles/Form';
 
 /** -------------------------------------------------
 * COMPONENT

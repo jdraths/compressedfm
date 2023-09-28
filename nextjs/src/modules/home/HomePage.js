@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 // components
-import { EpisodeGrid } from 'modules/shared/components/EpisodeGrid';
-import { Newsletter } from 'modules/shared/components/Newsletter';
-import { Podcatchers } from 'modules/shared/components/Podcatchers';
-import { VerticalDivider } from 'modules/shared/components/VerticalDivider';
+import { Newsletter } from '../shared/components/Newsletter';
+import { Podcatchers } from '../shared/components/Podcatchers';
+import { VerticalDivider } from '../shared/components/VerticalDivider';
+import { EpisodeGrid } from '../shared/components/EpisodeGrid';
 
 // styles
 import { TheHosts } from './components/TheHosts';

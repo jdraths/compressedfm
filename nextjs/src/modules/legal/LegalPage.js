@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import BlockContent from '@sanity/block-content-to-react';
 
 // components
-import { serializers } from 'modules/shared/blockContent/Serializers';
-import { Meta } from 'modules/shared/components/Meta';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
+import { Meta } from 'src/modules/shared/components/Meta';
 
 // styles
-import { MixinBodyCopy, MixinHeadingWithHorizontalLines } from 'styles/Typography';
+import { MixinBodyCopy, MixinHeadingWithHorizontalLines } from 'src/styles/Typography';
 
 /** -------------------------------------------------
 * COMPONENT

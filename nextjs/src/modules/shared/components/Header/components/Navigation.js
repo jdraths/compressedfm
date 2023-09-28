@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import client from 'utils/client';
+import client from 'src/utils/client';
 import groq from 'groq';
 import styled from 'styled-components';
 
 // components
-import { Breakpoints } from 'styles/Breakpoints';
+import { Breakpoints } from 'src/styles/Breakpoints';
 import { Tag } from './Tag';
 import { TopNav } from './TopNav';
 import { SearchForm } from './SearchForm';
@@ -74,7 +74,7 @@ Navigation.propTypes = {
 };
 
 Navigation.defaultProps = {
-  closeNav: () => { },
+  closeNav: () => {},
   isShowing: false,
   // eslint-disable-next-line prettier/prettier
   handleClick: () => { },

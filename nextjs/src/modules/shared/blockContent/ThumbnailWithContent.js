@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BlockContent from '@sanity/block-content-to-react';
 
 // components
-import { serializers } from 'modules/shared/blockContent/Serializers';
+import { serializers } from 'src/modules/shared/blockContent/Serializers';
 
 /** -------------------------------------------------
 * COMPONENT
