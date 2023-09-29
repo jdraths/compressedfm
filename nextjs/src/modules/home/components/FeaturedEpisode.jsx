@@ -54,8 +54,8 @@ const FeaturedEpisode = ({
         <p>{briefDescription}</p>
         {/* <div className="grid grid-cols-1 md:grid-cols-2"> */}
         <MoreLink href={`/episode/${slug.current}`} className="more-link" label="view episode" />
-        {guest && <p>Guests:</p>}
-        <div className="hidden md:flex flex-row flex-wrap divide-x items-center">
+        {guest && <p className="hidden md:block">Guests:</p>}
+        <div className="hidden flex-row flex-wrap items-center divide-x md:flex">
           {/* <li>
             <Image src="/images/james.png" height={60} width={60} alt="James Q Quick" />
           </li>

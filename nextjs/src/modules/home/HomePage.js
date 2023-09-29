@@ -34,7 +34,7 @@ const HomePage = ({ episodes }) => {
       <TheHosts />
       <VerticalDivider />
 
-      {episodes && (
+      {episodes && remainingEpisodes.length > 0 && (
         <>
           <EpisodeGrid header="Recent Episodes" episodes={remainingEpisodes} />
           <VerticalDivider />
