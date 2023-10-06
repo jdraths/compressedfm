@@ -28,7 +28,8 @@ const HeaderHome = () => {
       {/* TODO: update logo */}
       {/* <Image alt="Altus Talks Logo" src="/images/logo.svg" width={850} height={272} /> */}
       <div className="flex flex-col items-center">
-        <Image alt="Altus Talks Logo" src="/images/onAir.gif" width={350} height={272} className="margin-auto" />
+        {/* <Image alt="Altus Talks Logo" src="/images/onAir.gif" width={350} height={272} className="margin-auto" /> */}
+        <Image alt="Altus Talks Logo" src="/images/static-logo.png" width={350} height={272} className="margin-auto" />
         <h2>
           A monthly podcast by the interesting students at&nbsp;
           <Link href="https://altusacademy.org" target="_blank" rel="noreferrer">

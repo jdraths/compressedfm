@@ -22,8 +22,9 @@ HomeLayout.propTypes = {
 * STYLES
 ---------------------------------------------------- */
 const StyledPage = styled.div`
-  background: url('/images/bg.png') center -25px no-repeat;
-  background-size: 100% auto;
+  // background: url('/images/bg.png') center -25px no-repeat;
+  background: url('/images/stars-bg.gif') center -25px;
+  // background-size: 100% auto;
   min-height: 100vh;
 `;
 

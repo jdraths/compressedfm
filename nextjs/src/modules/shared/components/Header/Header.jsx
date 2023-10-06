@@ -25,10 +25,17 @@ const Header = () => {
       <Navigation isShowing={navShowing} handleClick={handleClick} />
       <Hamburger className="hamburger" onClick={handleClick} navShowing={navShowing} />
 
-      <div className='flex flex-col items-center'>
-          <Link href="/">
-            <Image alt="Altus Talks Logo" src="/images/onAir.gif" width={350} height={272} className="margin-auto" />
-          </Link>
+      <div className="flex flex-col items-center">
+        <Link href="/">
+          {/* <Image alt="Altus Talks Logo" src="/images/onAir.gif" width={350} height={272} className="margin-auto" /> */}
+          <Image
+            alt="Altus Talks Logo"
+            src="/images/static-logo.png"
+            width={350}
+            height={272}
+            className="margin-auto"
+          />
+        </Link>
       </div>
     </StyledHeader>
   );
