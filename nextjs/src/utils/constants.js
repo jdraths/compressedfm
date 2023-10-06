@@ -4,9 +4,9 @@ const Constants = Object.freeze({
   // podcast catchers
   CASTBOX_URL: '',
   GOOGLE_URL: '',
-  ITUNES_URL: '',
+  ITUNES_URL: 'https://podcasts.apple.com/us/podcast/altus-talks/id1709523071',
   POCKET_CASTS_URL: '',
-  SPOTIFY_URL: '',
+  SPOTIFY_URL: 'https://open.spotify.com/show/20n8v5eyVtoIqOKQ7lOoSM',
   STITCHER_URL: '',
   // CASTBOX_URL: 'https://castbox.fm/channel/COMPRESSEDfm-id4038683?country=us',
   // GOOGLE_URL: 'https://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9ocTdNMlM3cw%3D%3D',
@@ -19,7 +19,7 @@ const Constants = Object.freeze({
   COMPRESSEDFM_GITHUB_URL: 'https://github.com/compressedfm',
   COMPRESSEDFM_INSTAGRAM_URL: 'https://instagram.com/compressedfm',
   ALTUS_TWITTER_URL: 'https://twitter.com/altusacademy',
-  COMPRESSEDFM_RSS: 'https://www.compressed.fm/rss.xml',
+  ALTUSTALKS_RSS: 'https://feeds.simplecast.com/WLX1lnH9',
 
   // james
   JAMES_WEBSITE_URL: 'https://jamesqquick.com',

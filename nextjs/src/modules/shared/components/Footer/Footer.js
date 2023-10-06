@@ -23,7 +23,7 @@ const Footer = ({ footerLinks }) => {
         // instagram={Constants.COMPRESSEDFM_INSTAGRAM_URL}
         // github={Constants.COMPRESSEDFM_GITHUB_URL}
         twitter={Constants.ALTUS_TWITTER_URL}
-        // rss={Constants.COMPRESSEDFM_RSS}
+        rss={Constants.ALTUSTALKS_RSS}
       />
 
       {/* TODO: they had links about legal disclaimers, terms of use, privacy policy */}
