@@ -18,7 +18,7 @@ const Constants = Object.freeze({
   // social
   COMPRESSEDFM_GITHUB_URL: 'https://github.com/compressedfm',
   COMPRESSEDFM_INSTAGRAM_URL: 'https://instagram.com/compressedfm',
-  ALTUS_TWITTER_URL: 'https://twitter.com/altusacademy',
+  ALTUS_TWITTER_URL: 'https://twitter.com/altus_academy',
   ALTUSTALKS_RSS: 'https://feeds.simplecast.com/WLX1lnH9',
 
   // james
