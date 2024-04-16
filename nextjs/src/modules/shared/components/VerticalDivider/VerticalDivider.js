@@ -25,7 +25,10 @@ VerticalDivider.defaultProps = {
 ---------------------------------------------------- */
 const StyledVerticalDivider = styled.div`
   text-align: center;
-  width: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
 `;
 
 export { VerticalDivider };

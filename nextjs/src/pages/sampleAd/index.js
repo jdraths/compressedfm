@@ -1,4 +1,6 @@
 import { WaveformPlayer } from 'src/modules/shared/components/AudioPlayer/WaveformPlayer';
+import { Podcatchers } from 'src/modules/shared/components/Podcatchers';
+import { VerticalDivider } from 'src/modules/shared/components/VerticalDivider';
 
 export default function Home() {
   return (
@@ -18,6 +20,10 @@ export default function Home() {
         episodeNumber="Zeus"
         skipTo={0}
       />
+
+      <VerticalDivider />
+
+      <Podcatchers className="podcatchers" />
     </div>
   );
 }
