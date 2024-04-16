@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 export const useAudioPlayer = (audioRef, progressBarRef) => {
   const [speed, setSpeed] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [duration, setDuration] = useState(0);
+  const [duration, setDuration] = useState(41.6);
   const [currentTime, setCurrentTime] = useState(0);
   const animationRef = useRef(); // reference the animation
 
