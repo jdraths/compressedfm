@@ -28,8 +28,8 @@ const EpisodePage = ({ episodes }) => {
       <EpisodeGrid episodes={remainingEpisodes} />
       <VerticalDivider />
       <Podcatchers className="podcatchers" />
-      <VerticalDivider />
-      <Newsletter />
+      {/* <VerticalDivider />
+      <Newsletter /> */}
     </StyledEpisodePage>
   );
 };

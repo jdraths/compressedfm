@@ -101,7 +101,7 @@ const IndividualEpisodePage = ({
       )}
 
       {/* NEWSLETTER */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </StyledIndividualEpisodePage>
   );
 };

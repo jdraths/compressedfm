@@ -37,11 +37,11 @@ const HomePage = ({ episodes }) => {
       {episodes && remainingEpisodes.length > 0 && (
         <>
           <EpisodeGrid header="Recent Episodes" episodes={remainingEpisodes} />
-          <VerticalDivider />
+          {/* <VerticalDivider /> */}
         </>
       )}
 
-      <Newsletter />
+      {/* <Newsletter /> */}
     </StyledHomePage>
   );
 };

@@ -25,8 +25,8 @@ const TagPage = ({ content }) => {
           <em>No Episodes Found</em>
         </p>
       )}
-      <VerticalDivider />
-      <Newsletter />
+      {/* <VerticalDivider />
+      <Newsletter /> */}
     </StyledTagPage>
   );
 };

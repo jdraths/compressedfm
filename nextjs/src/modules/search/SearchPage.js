@@ -20,8 +20,8 @@ const SearchPage = ({ episodes, keywords }) => (
       <SearchForm />
     </div>
     <EpisodeGrid episodes={episodes} />
-    <VerticalDivider />
-    <Newsletter />
+    {/* <VerticalDivider />
+    <Newsletter /> */}
   </StyledSearchPage>
 );
 

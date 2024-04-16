@@ -108,8 +108,8 @@ const AboutPage = ({ faqs, gettingStarted, mostPopular, siteSettings }) => (
         ))}
       </section>
     )}
-    <VerticalDivider />
-    <Newsletter />
+    {/* <VerticalDivider />
+    <Newsletter /> */}
   </StyledAboutPage>
 );
 
