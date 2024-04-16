@@ -60,7 +60,8 @@
     "build": "prisma generate && next build",
     "dev": "prisma generate && next dev",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "db:studio": "npx prisma studio --browser none"
   },
   "version": "0.1.0"
 }

@@ -68,7 +68,7 @@ const FeaturedEpisode = ({
                 {one.avatar ? (
                   <Image src={one.avatar} height={60} width={60} alt={`${one.firstName} ${one.lastName}`} />
                 ) : (
-                  <span className="">{`${one.firstName} ${one.lastName}`}</span>
+                  <span className="">{`${one.title} ${one.firstName ?? ''} ${one.lastName ?? ''}`}</span>
                 )}
               </div>
             ))}

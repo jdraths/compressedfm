@@ -35,6 +35,7 @@ export const AllEpisodesQuery = groq`*[_type == "episode" && published == true &
     title,
     "cover": episodeCover.asset->url,
     guest[]->{
+      title,
       firstName,
       lastName,
       "avatar": avatar.asset->url,
@@ -51,6 +52,7 @@ export const RecentEpisodesQuery = groq`*[_type == "episode" && published == tru
     title,
     "cover": episodeCover.asset->url,
     guest[]->{
+      title,
       firstName,
       lastName,
       "avatar": avatar.asset->url,
